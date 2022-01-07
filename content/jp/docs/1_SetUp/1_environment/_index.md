@@ -17,7 +17,7 @@ Kotlinでプログラムを開発する方法はいくつかありますが、
 IDE自体の評判も高いことが理由です。
 個人やオープンソース開発であれば、無償版(Community Edition)が使用できる点もメリットです。
 
-<img src="../intellij-idea.png" width=70%/>
+<img src="intellij-idea.png" width=70%/>
 
 ### ダウンロード～インストール
 

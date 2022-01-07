@@ -24,7 +24,7 @@ description: >
 
 この後、しばらく時間が掛かった後、*src*ディレクトリなどが用意されたプロジェクトツリーが生成されます。
 
-後は、*build.gradle.ks*ファイルを開いて、必要な定義を加えていきます。まず、JavaFXの利用
+後は、*build.gradle.ks*ファイルを開いて、必要な定義を加えていきます。まず、JavaFXの利用を定義します。
 ```kotlin
 plugins {
     id("org.openjfx.javafxplugin") version "0.0.9"
@@ -32,7 +32,8 @@ plugins {
 javafx {
     version = "11.0.2"
     modules = listOf("javafx.controls","javafx.fxml")
-}```
+}
+```
 
 JGitの定義もここに加えます。
 ```kotlin

@@ -13,7 +13,7 @@ description: ビュー定義をFXMLで実施するための準備をします。
 JavaFXにはそのための機能として、UIをXMLファイル(FXML)で記述することが可能になっています。  
 詳細な説明は[こちらのチュートリアル](https://docs.oracle.com/javase/jp/8/javafx/get-started-tutorial/fxml_tutorial.htm)などを参照頂くとして、ここでは簡単なサンプルを紹介したいと思います。
 
-まず、次のようなFXMLファイル"*Hello.fxml*"を作成して、*resources/*フォルダ下に配置します。
+まず、次のようなFXMLファイル"*Hello.fxml*"を作成して、*resources/* フォルダ下に配置します。
 
 ```kotlin
 <?xml version="1.0" encoding="UTF-8"?>
@@ -75,4 +75,4 @@ fun main(args: Array<String>) {
 ```
 
 実行すれば、次のような画面が表示されるはずです。
-![Hello, World](/images/javafx/3.png)
+![Hello, World](javafx_3.png)

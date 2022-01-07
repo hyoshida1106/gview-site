@@ -26,7 +26,7 @@ javafx {
 ```
 
 追加をすると、次のようなアイコンが表示されるので、「Gradleの変更を読み込む」を実行します。
-![gradle更新](/images/javafx/1.png)
+![gradle更新](javafx_1.png)
 
 エラーなく終了すれば、準備完了です。
 
@@ -59,7 +59,8 @@ javafx {
 }
 
 tasks.getByName<Test>("test") {
-    useJUnitPlatform()}
+    useJUnitPlatform()
+}
 ```
 
 ### サンプルプログラム - hello, world
@@ -98,5 +99,5 @@ fun main(args: Array<String>) {
 ```
 
 実行すれば、次のような画面が表示されるはずです。
-![Hello, World](/images/javafx/2.png)
+![Hello, World](javafx_2.png)
 

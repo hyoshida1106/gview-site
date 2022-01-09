@@ -1,4 +1,5 @@
 ---
+tags: ["IntelliJ/IDEA","Project","kotlin"]
 title: "kotlinプロジェクトの作成"
 draft: false
 weight: 2

@@ -1,0 +1,17 @@
+.pageinfo {
+    background: $gray-200;
+    border-radius: 5px;
+    padding: 1.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+
+    @extend .td-max-width-on-larger-screens;
+
+    @each $color, $value in $theme-colors {
+        &-#{$color} {
+            border-style: solid;
+            border-color: $value;
+        }
+    }
+}

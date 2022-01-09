@@ -1,4 +1,5 @@
 ---
+tags: ["IntelliJ/IDEA","Project","JGit"]
 title: "基本設定"
 draft: false
 weight: 1

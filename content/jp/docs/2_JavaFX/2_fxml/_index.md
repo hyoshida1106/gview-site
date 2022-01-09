@@ -1,4 +1,5 @@
 ---
+tags: ["JavaFX","FXML"]
 title: "FXMLファイルの作成"
 draft: false
 weight: 2

@@ -1,0 +1,17 @@
+// Code formatting.
+
+.td-content {
+    // Inline code
+    p code, li > code, table code {
+        padding: 0.2em 0.4em;
+        font-size: 100%;
+    }
+    // Code blocks
+    pre {
+        border: 2px solid rgba(131, 97, 3, 0.459);
+        border-radius: 0.3rem;
+        font-size: 100%;
+        padding: $spacer;
+        margin-bottom: 3rem;
+    }
+}

@@ -1,4 +1,5 @@
 ---
+tags: ["IntelliJ/IDEA","Project"]
 title: "開発環境"
 draft: false
 weight: 1

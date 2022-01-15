@@ -2,6 +2,8 @@
 title: "gviewの実装"
 linkTitle: "gviewの実装"
 weight: 4
+description: >
+  gviewのプログラミングについて説明します。
 ---
 
 {{% pageinfo %}}

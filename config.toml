@@ -75,12 +75,12 @@ description = "Gview"
 languageName ="Japanese"
 # Weight used for sorting.
 weight = 1
-#[languages.en]
-#title = "Goldydocs"
-#description = "A Docsy example site"
-#languageName ="English"
+[languages.en]
+title = "gview"
+description = "Gview"
+languageName ="English"
 # Weight used for sorting.
-#weight = 1
+weight = 1
 
 [markup]
   [markup.goldmark]

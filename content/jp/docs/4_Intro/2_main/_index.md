@@ -157,7 +157,7 @@ class GvApplication: Application()
 
 ##### monitorインスタンス
 
-独自に実装した[アイドルタイマ]({{< relref "blog/topics/idletimer" >}} "アイドルタイマ")のインスタンスで、1秒間のアイドルを監視します。  
+独自に実装した[アイドルタイマ]({{< relref "blog/topics/1_idletimer" >}} "アイドルタイマ")のインスタンスで、1秒間のアイドルを監視します。  
 ```kotlin
     private val monitor = GvIdleTimer(1000) {
         GvBaseWindowCtrl.updateConfigInfo()

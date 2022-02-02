@@ -1,9 +1,9 @@
 ---
-title: "gviewの実装"
-linkTitle: "gviewの実装"
+title: "メインウィンドウの実装"
+linkTitle: "メインウィンドウの実装"
 weight: 4
 description: >
-  gviewのプログラミングについて説明します。
+  gviewのプログラミングについて、まずはメイン部分から説明します。
 ---
 
 {{% pageinfo %}}

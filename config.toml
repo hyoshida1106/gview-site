@@ -214,7 +214,7 @@ url = "mailto:gview@gview.skr.jp"
 icon = "fa fa-envelope"
 #desc = "Discuss development issues around the project"
 
-#[sitemap]
-#  changefreq = "monthly"
-#  filename = "sitemap.xml"
-#  priority = 0.5
+[sitemap]
+#changefreq = "monthly"
+filename = "sitemap_index.xml"
+#priority = 0.5

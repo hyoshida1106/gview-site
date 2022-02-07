@@ -2,7 +2,7 @@
 tags: ["gview","JavaFX"]
 title: MainWindowの実装
 draft: false
-weight: 3
+weight: 1
 description: >
     MainWindowの実装について説明します。
 ---

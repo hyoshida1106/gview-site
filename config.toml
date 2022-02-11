@@ -215,6 +215,6 @@ icon = "fa fa-envelope"
 #desc = "Discuss development issues around the project"
 
 [sitemap]
+filename = "sitemap.xml"
 #changefreq = "monthly"
-filename = "sitemap_index.xml"
 #priority = 0.5

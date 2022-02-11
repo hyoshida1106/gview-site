@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /categories/
 Disallow: /tags/
 Disallow: /en/
-Sitemap: https://gview.skr.jp/sitemap_index.xml
+Sitemap: https://gview.skr.jp/sitemap.xml

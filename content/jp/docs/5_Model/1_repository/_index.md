@@ -55,9 +55,9 @@ Observableなプロパティとして保持します。
 
 {{< card-code header="**GvRepository.kt**" lang="kotlin" >}}package gview.model
 
-import gview.model.branch.GviewBranchListModel
-import gview.model.commit.GviewCommitListModel
-import gview.model.workfile.GviewWorkFilesModel
+import gview.model.branch.GviBranchListModel
+import gview.model.commit.GviCommitListModel
+import gview.model.workfile.GvwWorkFilesModel
 import javafx.beans.property.SimpleObjectProperty
 import org.eclipse.jgit.api.Git
 import org.eclipse.jgit.lib.Repository
@@ -65,9 +65,9 @@ import java.io.File
 
 class GvRepository private constructor(val jgitRepository: Repository) {
 
-    val workFiles = GviewWorkFilesModel(this)
-    val branches = GviewBranchListModel(this)
-    val commits = GviewCommitListModel(this)
+    val workFiles = GvWorkFilesModel(this)
+    val branches = GvBranchListModel(this)
+    val commits = GvCommitListModel(this)
 
     companion object {
         val currentRepositoryProperty = SimpleObjectProperty<GvRepository>()

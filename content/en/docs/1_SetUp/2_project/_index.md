@@ -9,7 +9,7 @@ description:
 
 Once the installation of the IDE is complete, the first step is to create a project.
 
-### Create a New Project
+### Create New Project
 
 In developing gview, I decided to create a project to manage dependencies in [Gradle](https://gradle.org/).
 

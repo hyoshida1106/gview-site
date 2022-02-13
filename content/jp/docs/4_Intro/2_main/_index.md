@@ -36,15 +36,6 @@ fun main(args: Array<String>) {
 ```kotlin
 class GvApplication: Application()
 ```
-アプリケーションインスタンスを他クラスからアクセス可能にしたかったため、上のようなsingleton管理を行うことにしました。調べる限りでは、JavaFXでアプリケーションインスタンスを参照する方法はないようなので、このようにしたのですが、もっとスマートな方法があれば修正したいと思います。
-```kotlin
-    companion object {
-        lateinit var instance : GvApplication
-    }
-    init {
-        instance = this
-    }
-```
 
 ##### start()メソッド
 

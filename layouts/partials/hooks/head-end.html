@@ -1,0 +1,9 @@
+{{ with .Site.Params.algolia_docsearch }}
+<!-- stylesheet for algolia docsearch -->
+{{ end }}
+
+{{- if .IsTranslated -}}
+{{ range .Translations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+{{- end -}}    
+{{- end -}}

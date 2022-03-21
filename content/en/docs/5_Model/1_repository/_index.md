@@ -7,8 +7,8 @@ description: >
     About the implementation of the repository model
 ---
 
-I decided to manage Git information on a per-repository basis.
-This is the style to allow you to manipulate related information by specifying the repository.
+Git information is managed on a per-repository basis.
+This style allows us to manipulate related information by specifying the repository.
 
 At the moment, only one repository can be operated at a time, but in the future I would like to consider a way to manage multiple repositories simultaneously.
 
@@ -46,8 +46,8 @@ There are three ways to create a repository, so we have methods for each of them
 
 Each of these processes can be easily implemented using static methods of the JGit `Git` class.
 
-We also decided to have a reference to the generated instance here.
-We keep it as an Observable property so that the controller can be notified when the instance is regenerated.
+I also have a reference to the generated instance here.
+I keep it as an Observable property so that the controller can be notified when the instance is regenerated.
 
 As a result of the above implementation, we have the following class:
 

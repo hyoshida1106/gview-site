@@ -1,6 +1,6 @@
 ---
 tags: ["JGit","kotlin"]
-title: リポジトリモデルの作成
+title: リポジトリモデル
 draft: false
 weight: 1
 description: >
@@ -66,7 +66,7 @@ import java.io.File
 class GvRepository private constructor(val jgitRepository: Repository) {
 
     val workFiles = GvWorkFilesModel(this)
-    val branches = GvBranchListModel(this)
+    val branches = GvBranchList(this)
     val commits = GvCommitListModel(this)
 
     companion object {

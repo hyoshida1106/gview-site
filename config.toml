@@ -211,7 +211,7 @@ enable = false
 #        desc = "Chat with other project developers"
 [[params.links.developer]]
 name = "Contact by Mail"
-url = "mailto:gview@gview.skr.jp"
+url = "mailto:gview@gview.sakuraweb.com"
 icon = "fa fa-envelope"
 #desc = "Discuss development issues around the project"
 

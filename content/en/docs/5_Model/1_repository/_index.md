@@ -4,7 +4,7 @@ title: Creating Repository Model
 draft: false
 weight: 1
 description: >
-    About the implementation of the repository model
+    Implementation of the repository model
 ---
 
 Git information is managed on a per-repository basis.
@@ -64,7 +64,7 @@ import java.io.File
 class GvRepository private constructor(val jgitRepository: Repository) {
 
     val workFiles = GvWorkFilesModel(this)
-    val branches = GvBranchListModel(this)
+    val branches = GvBranchList(this)
     val commits = GvCommitListModel(this)
 
     companion object {

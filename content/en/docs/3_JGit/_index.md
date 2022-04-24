@@ -5,7 +5,7 @@ title: "Introducing JGit"
 linkTitle: "Introducing JGit"
 weight: 3
 description: >
-  JGitを使ったプログラミングができるようにセットアップします。
+  Set up for programming with JGit.
 ---
 
 {{% pageinfo %}}

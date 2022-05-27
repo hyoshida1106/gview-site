@@ -1,5 +1,5 @@
 ---
-tags: ["JGit","kotlin"]
+tags: ["JGit","kotlin","repository"]
 title: リポジトリモデル
 draft: false
 weight: 1

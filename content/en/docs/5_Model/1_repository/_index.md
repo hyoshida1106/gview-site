@@ -1,5 +1,5 @@
 ---
-tags: ["JGit","kotlin"]
+tags: ["JGit","kotlin","repository"]
 title: Creating Repository Model
 draft: false
 weight: 1

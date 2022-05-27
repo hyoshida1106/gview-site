@@ -1,5 +1,5 @@
 ---
-tags: ["JGit","kotlin"]
+tags: ["JGit","kotlin","branch"]
 title: ブランチモデル
 draft: false
 weight: 2

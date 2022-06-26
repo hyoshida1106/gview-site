@@ -70,14 +70,14 @@ id = "G-C8XR089NBQ"
 
 [languages]
 [languages.jp]
-title = "gview"
-description = "Gview"
+title = "gview - Git GUIクライアント"
+description = "KotlinとJavaFXによるマルチプラットフォームGit GUIの開発記録"
 languageName ="Japanese"
 # Weight used for sorting.
 weight = 1
 [languages.en]
-title = "gview"
-description = "Gview"
+title = "gview - Git GUI Client"
+description = "Development record of multi-platform Git GUI with Kotlin and JavaFX"
 languageName ="English"
 contentDir = "content/en"
 # Weight used for sorting.

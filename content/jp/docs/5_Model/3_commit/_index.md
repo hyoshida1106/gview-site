@@ -11,7 +11,7 @@ description: >
 
 ### コミット情報リストの取得
 
-リポジトリの生成やブランチ情報の取得には、JGitの高レベルクラスである[*Git*](https://javadoc.io/doc/org.eclipse.jgit/org.eclipse.jgit/5.9.0.202009080501-r/org/eclipse/jgit/api/Git.html)を使用しましが、
+リポジトリの生成やブランチ情報の取得には、JGitの高レベルクラスである[*Git*](https://javadoc.io/doc/org.eclipse.jgit/org.eclipse.jgit/5.9.0.202009080501-r/org/eclipse/jgit/api/Git.html)を使用しましたが、
 コミットに関してはもっと詳細な情報が欲しいため、もう少し低いレベルで処理を行うことにします。
 
 JGitには[*PlotWalk*](https://javadoc.io/static/org.eclipse.jgit/org.eclipse.jgit/5.9.0.202009080501-r/org/eclipse/jgit/revplot/PlotWalk.html)というクラスがあり、単にコミットの情報だけでなく、コミットグラフを描画するための情報も取り出すことができます。

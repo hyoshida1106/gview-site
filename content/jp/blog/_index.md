@@ -4,6 +4,6 @@ linkTitle: "Blog"
 menu:
   main:
     weight: 20
+description: >
+  開発中のトピックや、パーツとして実装したコードを紹介しています。
 ---
-
-gview開発中のトピックや、実装したコードを紹介したいと思います。

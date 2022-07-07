@@ -3,7 +3,7 @@ tags: ["javaFX","kotlin","dialog"]
 title: "Custom Dialog in JavaFX"
 date: 2022-07-05
 description: >
-    Implement a custom dialog class in JavaFX.
+    Implementing JavaFX custom dialog class in kotlin.
 ---
 
 JavaFX has three dialog implementation classes: [Alert](https://docs.oracle.com/javase/jp/8/javafx/api/javafx/scene/control/Alert.html), [ChoiceDialog](https://docs.oracle.com/javase/jp/8/javafx/api/javafx/scene/control/ChoiceDialog.html), and [TextInputDialog](https://docs.oracle.com/javase/jp/8/javafx/api/javafx/scene/control/TextInputDialog.html).

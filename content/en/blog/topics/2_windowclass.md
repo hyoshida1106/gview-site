@@ -1,9 +1,10 @@
 ---
-tags: ["JavaFX","kotlin"]
+tags: ["JavaFX","kotlin","FXML","Window"]
 title: "Window Base Classes"
 date: 2022-01-30
 description: >
-    Describes the JavaFX window implementation class used to implement Gview.
+    This section describes the basic classes available for implementing JavaFX windows in Kotlin.<br/>
+    You can easily implement the operations of the window defined in FXML in Kotlin.
 ---
 
 For the gview implementation, I arranged the classes described in [Common Classes]({{< relref "docs/2_JavaFX/3_baseclass" >}} "Common Classes") and developed window common classes with necessary functions added.

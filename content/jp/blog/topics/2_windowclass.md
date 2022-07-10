@@ -1,9 +1,10 @@
 ---
-tags: ["JavaFX","kotlin"]
+tags: ["JavaFX","kotlin","FXML","Window"]
 title: "Window基本クラス"
 date: 2022-01-30
 description: >
-    Gviewの実装に使用しているJavaFXウィンドウ実装クラスについて説明します。
+    JavaFXウィンドウをKotlinで実装するために、共通的に利用可能なクラスを作成しました。<br/>
+    FXMLで定義したフォームの処理を、Kotlinで簡単に実装することができます。
 ---
 
 Gviewでは、[共通クラス]({{< relref "docs/2_JavaFX/3_baseclass" >}} "共通クラス")で説明したクラスをアレンジして、必要な機能を加えたウィンドウ共通クラスを用意しました。

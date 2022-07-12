@@ -3,8 +3,8 @@ tags: ["IntelliJ/IDEA","Project","JavaFX"]
 title: "Basic Settings"
 draft: false
 weight: 1
-description:
- Set up packages, etc. so that we can use JavaFX classes in our project.
+description: >
+  Describes how to set up the packages to use JavaFX classes in our project.
 ---
 
 This section describes to set up packages, etc. to use JavaFX classes in our project.

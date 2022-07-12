@@ -4,7 +4,7 @@ title: "Creating a kotlin project"
 draft: false
 weight: 2
 description:
-    Create our first Kotlin project in IntelliJ/IDEA.
+  Descrives how to create our first Kotlin project in IntelliJ/IDEA.
 ---
 
 Once the installation of the IDE is complete, the first step is to create a project.

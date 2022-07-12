@@ -4,7 +4,7 @@ title: MainWindowの実装
 draft: false
 weight: 1
 description: >
-    MainWindowの実装について説明します。
+    MainWindowの実装について説明します。独自の基本クラスを使用して、JavaFX(FXML)ウィンドウをKotlinで実装しています。
 ---
 
 Gviewのメインウィンドウの実装について説明します。

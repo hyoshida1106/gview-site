@@ -9,14 +9,14 @@ description: >
 
 Gviewでは、[共通クラス]({{< relref "docs/2_JavaFX/3_baseclass" >}} "共通クラス")で説明したクラスをアレンジして、必要な機能を加えたウィンドウ共通クラスを用意しました。
 
+---
 ### *GvBaseWindow*
 
 ウィンドウの基本クラスです。内容としては [*BaseWindow*]({{< relref "docs/2_JavaFX/3_baseclass#BaseWindow" >}}) とほぼ同じですが、*ControlClass* の名称をパラメータに追加しました。
 
 名称自体は処理中では使っていませんが、同じ名称を *StleClass* として加えておくことで、各コントロールクラスで独自のスタイル定義が可能なようにしてあります。
 
-```kotlin
-package gview.view.framework
+{{< card-code header="**GvBaseWindow.kt**" lang="kotlin" >}}package gview.view.framework
 
 import javafx.fxml.FXMLLoader
 import javafx.scene.Parent
@@ -34,8 +34,9 @@ open class GvBaseWindow<Controller>(formPath: String, controlClass: String)
         controller = loader.getController() as Controller
     }
 }
-```
+{{< /card-code >}}<br/>
 
+---
 ### *GvBaseWindowControl*
 
 コントロールクラスには、すべてのウィンドウインスタンスにイベントを送信するための仕組みを追加しました。
@@ -55,8 +56,7 @@ open class GvBaseWindow<Controller>(formPath: String, controlClass: String)
 各ウィンドウの持っている情報の永続化を行うタイミングを通知します。
 </dd>
 
-```kotlin
-package gview.view.framework
+{{< card-code header="**GvBaseWindowCtrl.kt**" lang="kotlin" >}}package gview.view.framework
 
 open class GvBaseWindowCtrl {
     // InnerClass - WindowObserver
@@ -81,7 +81,10 @@ open class GvBaseWindowCtrl {
         fun updateConfigInfo() { observers.forEach { it.innerUpdateConfigInfo() } }
     }
 }
-```
+{{< /card-code >}}<br/>
+
+---
+### 使用方法
 
 実際のクラスを実装するには、それぞれのクラスを継承した具象クラスを用意します。  
 *MainWindow* の場合、次のようなコントロールクラスを実装しました。

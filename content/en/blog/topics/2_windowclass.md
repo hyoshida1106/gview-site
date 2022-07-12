@@ -1,6 +1,6 @@
 ---
 tags: ["JavaFX","kotlin","FXML","Window"]
-title: "Window Base Classes"
+title: "Basic Window Classes"
 date: 2022-01-30
 description: >
     This section describes the basic classes available for implementing JavaFX windows in Kotlin.<br/>
@@ -9,19 +9,19 @@ description: >
 
 For the gview implementation, I arranged the classes described in [Common Classes]({{< relref "docs/2_JavaFX/3_baseclass" >}} "Common Classes") and developed window common classes with necessary functions added.
 
+---
 ### *GvBaseWindow*
 
 The base class for windows.
 The implementation is almost the same as [*BaseWindow*]({{< relref "docs/2_JavaFX/3_baseclass#BaseWindow" >}}), but the name of *ControlClass* has been added to the parameter.
 The name itself is not used in the process, but it is added to *StleClass* so that each control class can have its own style definition.
 
-```kotlin
-package gview.view.framework
+{{< card-code header="**GvBaseWindow.kt**" lang="kotlin" >}}package gview.view.framework
 
 import javafx.fxml.FXMLLoader
 import javafx.scene.Parent
 
-open class GvBaseWindow<Controller>(formPath: String, controlClass: String)
+open class GvBaseWindow<Controller>(formPath: String, controlClass: String) 
         where Controller: GvBaseWindowCtrl {
 
     val root: Parent
@@ -34,8 +34,9 @@ open class GvBaseWindow<Controller>(formPath: String, controlClass: String)
         controller = loader.getController() as Controller
     }
 }
-```
+{{< /card-code >}}<br/>
 
+---
 ### *GvBaseWindowControl*
 
 I added a mechanism to send events to all window instances.
@@ -55,8 +56,8 @@ Perform any processing that needs to be done after the overall resource layout i
 Notifies when to persist the information that each window has.
 </dd>
 
-```kotlin
-package gview.view.framework
+
+{{< card-code header="**GvBaseWindowCtrl.kt**" lang="kotlin" >}}package gview.view.framework
 
 open class GvBaseWindowCtrl {
     // InnerClass - WindowObserver
@@ -81,7 +82,10 @@ open class GvBaseWindowCtrl {
         fun updateConfigInfo() { observers.forEach { it.innerUpdateConfigInfo() } }
     }
 }
-```
+{{< /card-code >}}<br/>
+
+---
+### Usage
 
 To implement the actual window, prepare a concrete class that inherits from the respective class.
 *In the case of MainWindow*, we have implemented the following control class:

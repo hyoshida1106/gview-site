@@ -4,7 +4,7 @@ title: Implementing MainWindow
 draft: false
 weight: 1
 description: >
-    Describes the implementation of MainWindow.
+    Describes the implementation of MainWindow. I have implemented a JavaFX (FXML) window in Kotlin using my own base class.
 ---
 
 This section describes the implementation of MainWindow.

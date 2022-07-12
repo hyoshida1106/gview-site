@@ -3,7 +3,7 @@ tags: ["JGit"]
 title: "ライブラリについて"
 draft: false
 weight: 2
-description: JGitのAPIに関する説明を簡単に行います。
+description: JGitのAPIについて、簡単に説明します。
 ---
 
 JGitを使うにあたって、用意されているAPIとその他のクラスについて説明します。

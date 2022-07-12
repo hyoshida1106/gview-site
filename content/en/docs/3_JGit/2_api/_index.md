@@ -3,7 +3,7 @@ tags: ["JGit"]
 title: "JGit Library"
 draft: false
 weight: 2
-description:
+description: >
   A brief description about JGit API.
 ---
 

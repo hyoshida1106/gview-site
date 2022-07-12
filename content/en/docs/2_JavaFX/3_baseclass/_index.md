@@ -2,8 +2,8 @@
 tags: ["JavaFX","FXML","gview"]
 title: "Base Classes"
 weight: 3
-description:
-  Here are the base classes created in this program.
+description: >
+  Here are the base classes created for this program to implement JavaFX winodws in kotlin.
 ---
 
 I introduced a sample of writing a JavaFX program (in kotlin), but to actually create an application, we need a more well-structured one.

@@ -4,7 +4,7 @@ title: Implementing BranchList
 draft: false
 weight: 2
 description: >
-    Describes the implementation of BranchList.
+    Describes the implementation of BranchList. This is a sample program that implements a JavaFX TreeView in Kotlin.
 ---
 
 BranchList is implemented in a *TreeView* with two routes, "Local" and "Remote".

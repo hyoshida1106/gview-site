@@ -3,8 +3,8 @@ tags: ["JavaFX","FXML"]
 title: "Creating FXML Files"
 draft: false
 weight: 2
-description:
-  Prepare the view definition to be implemented in FXML.
+description: >
+  Prepare the view definition of the window to be implemented in FXML.
 ---
 
 In the sample program shown in [Basic Settings]({{< relref "docs/2_JavaFX/1_setup#Basic Settings" >}} "Basic Settings"), the view configuration was written in Java (actually in Kotlin).  

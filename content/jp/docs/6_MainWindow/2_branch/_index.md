@@ -4,7 +4,7 @@ title: BranchListの実装
 draft: false
 weight: 2
 description: >
-    BranchListの実装について説明します。
+    BranchListの実装について説明します。JavaFXのTreeViewをKotlinで実装するサンプルになっています。
 ---
 
 BranchListは、"Local"と"Remote"という2つのルートを持った*TreeView*で実装しています。

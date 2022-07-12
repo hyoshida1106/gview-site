@@ -3,7 +3,7 @@ tags: ["IntelliJ/IDEA","Project","JavaFX"]
 title: "基本設定"
 draft: false
 weight: 1
-description: プロジェクトでJavaFXのクラスを利用できるように、パッケージなどのセットアップを行います。
+description: KotlinプロジェクトでJavaFXのクラスを利用できるように、パッケージなどのセットアップを行います。
 ---
 
 プロジェクトでJavaFXのクラスを利用できるように、パッケージなどのセットアップを行います。

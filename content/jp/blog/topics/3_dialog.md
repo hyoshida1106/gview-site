@@ -3,7 +3,7 @@ tags: ["javaFX","kotlin","dialog"]
 title: "カスタムダイアログ"
 date: 2022-07-05
 description: >
-    JavaFX用のカスタムダイアログクラスを実装しました。Kotlinで記述されています。
+    JavaFXで独自のダイアログを実装するためのカスタムダイアログクラスをKotlinで開発しました。
 ---
 
 JavaFXにはダイアログの実装クラスとして、[Alert](https://docs.oracle.com/javase/jp/8/javafx/api/javafx/scene/control/Alert.html)、[ChoiceDialog](https://docs.oracle.com/javase/jp/8/javafx/api/javafx/scene/control/ChoiceDialog.html)、[TextInputDialog](https://docs.oracle.com/javase/jp/8/javafx/api/javafx/scene/control/TextInputDialog.html)の3つがあります。

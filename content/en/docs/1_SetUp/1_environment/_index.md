@@ -3,8 +3,8 @@ tags: ["IntelliJ/IDEA","Project"]
 title: "Development Environment"
 draft: false
 weight: 1
-description: 
-    Install the IDE, IntelliJ/IDEA, as the development environment.
+description: >
+  Describes the procedure to install IDE(IntelliJ/IDEA) as the development environment.
 ---
 
 For the development of *gview*, I decided to use [Kotlin](https://kotlinlang.org/) as the programming language.

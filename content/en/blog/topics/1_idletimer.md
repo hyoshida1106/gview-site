@@ -11,6 +11,54 @@ Though there are various possible timing for saving, I try to record the size at
 
 After searching for a mechanism to achieve that, I found an example that uses JavaFX's Animation Timeline to implement it. So, I used that as a reference to create a generic idle timer, which described here.
 
+---
+### IdleTimer Class
+
+My implementation of idle timer class is as follows:
+
+{{< card-code header="**GvIdleTimer.kt**" lang="kotlin" >}}package gview.view.framework
+class GvIdleTimer(idleTime: Int, handler: () -> Unit ) {
+
+    private val idleTimeline: Timeline = Timeline(
+        KeyFrame(Duration(idleTime.toDouble()), { _ -> handler() }))
+
+    private val userEventHandler = EventHandler<Event> { resetTimer() }
+
+    fun register(scene: Scene, eventType: EventType<Event> = Event.ANY) {
+        scene.addEventFilter(eventType, userEventHandler)
+        startTimer()
+    }
+
+    fun register(node: Node, eventType: EventType<Event> = Event.ANY) {
+        node.addEventFilter(eventType, userEventHandler)
+        startTimer()
+    }
+
+    fun unregister(scene: Scene, eventType: EventType<Event> = Event.ANY) {
+        stopTimer()
+        scene.removeEventFilter(eventType, userEventHandler)
+    }
+
+    fun unregister(node: Node, eventType: EventType<Event> = Event.ANY) {
+        stopTimer()
+        node.removeEventFilter(eventType, userEventHandler)
+    }
+
+    private fun resetTimer() {
+        idleTimeline.playFromStart()
+    }
+
+    private fun startTimer() {
+        idleTimeline.cycleCount = 1;
+        idleTimeline.playFromStart()
+    }
+
+    private fun stopTimer() {
+        idleTimeline.stop( ) 
+    }
+}
+{{< /card-code >}}<br/>
+
 The first step is to declare the class:
 ```kotlin
 class GvIdleTimer(idleTime: Int, handler: () -> Unit )
@@ -57,50 +105,30 @@ If an event is issued while the timer is being monitored, we call the following 
     }
 ```
 
-The implementation of the idle timer we created is as follows.
-In addition to the previous explanation, the following two points have been implemented.
-* Added `javafx.scene.Node` registration.
-* Added `unregister` method to release instance monitoring.
+---
+### Usage
+
+Here is an example for use in a JavaFX application class.
 
 ```kotlin
-class GvIdleTimer(idleTime: Int, handler: () -> Unit ) {
 
-    private val idleTimeline: Timeline = Timeline(
-        KeyFrame(Duration(idleTime.toDouble()), { _ -> handler() }))
+class MyApplication : Application() {
 
-    private val userEventHandler = EventHandler<Event> { resetTimer() }
-
-    fun register(scene: Scene, eventType: EventType<Event> = Event.ANY) {
-        scene.addEventFilter(eventType, userEventHandler)
-        startTimer()
+    private val monitor = GvIdleTimer(1000) {
+        println("idle event")
     }
 
-    fun register(node: Node, eventType: EventType<Event> = Event.ANY) {
-        node.addEventFilter(eventType, userEventHandler)
-        startTimer()
-    }
-
-    fun unregister(scene: Scene, eventType: EventType<Event> = Event.ANY) {
-        stopTimer()
-        scene.removeEventFilter(eventType, userEventHandler)
-    }
-
-    fun unregister(node: Node, eventType: EventType<Event> = Event.ANY) {
-        stopTimer()
-        node.removeEventFilter(eventType, userEventHandler)
-    }
-
-    private fun resetTimer() {
-        idleTimeline.playFromStart()
-    }
-
-    private fun startTimer() {
-        idleTimeline.cycleCount = 1;
-        idleTimeline.playFromStart()
-    }
-
-    private fun stopTimer() {
-        idleTimeline.stop( ) 
+    override fun start(stage: Stage) {
+        ......
+        ......
+        monitor.register(stage.scene)
     }
 }
 ```
+
+First, we define an idle timer instance and describe the process to be executed when the time expires.   
+The constructor parameter specifies the wait time in ms.
+In the example above, 1,000 ms = 1 second is specified.
+
+All left is to register the ``scene`` with the timer instance.
+After 1 second of no operation, the defined process will be executed.

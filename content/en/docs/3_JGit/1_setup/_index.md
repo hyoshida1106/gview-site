@@ -3,8 +3,8 @@ tags: ["IntelliJ/IDEA","Project","JGit"]
 title: "Basic Settings"
 draft: false
 weight: 1
-description:
-  Configure to use JGit, download artifacts, etc.
+description: >
+  Describes the way to configure a project to use JGit, download artifacts, etc.
 ---
 
 The first step is to configure JGit for use, download the artifacts, etc.

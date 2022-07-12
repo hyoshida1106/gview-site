@@ -4,7 +4,7 @@ title: CommitListの実装
 draft: false
 weight: 3
 description: >
-    CommitListの実装について説明します。
+    CommitListの実装について説明します。JavaFXのTableViewをKotlinで実装しています。グラフィック表示のサンプルプログラムにもなると思います。
 ---
 
 CommitListはJavaFXの*TableView*を使用して実装しています。

@@ -2,7 +2,7 @@
 tags: ["JavaFX","FXML","gview"]
 title: "共通クラス"
 weight: 3
-description: 今回のプログラムで作成した共通クラスを紹介します。
+description: JavaFXウィンドウをKotlinで実装するために、今回のプログラムで作成した共通クラスを紹介します。
 ---
 
 JavaFXプログラムを(kotlinで)記述するサンプルを紹介したのですが、実際にアプリを作るためにはもう少し整った構造が必要になります。

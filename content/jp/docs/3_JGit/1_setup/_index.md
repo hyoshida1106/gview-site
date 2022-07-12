@@ -3,7 +3,7 @@ tags: ["IntelliJ/IDEA","Project","JGit"]
 title: "基本設定"
 draft: false
 weight: 1
-description: JGitを使用するための設定、アーティファクトのダウンロードなどを行います。
+description: KotlinプロジェクトでJGitを使用するための設定、アーティファクトのダウンロードなどを行います。
 ---
 
 まずは、JGitを使用するための設定、アーティファクトのダウンロードなどを行います。

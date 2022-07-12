@@ -4,7 +4,7 @@ title: Implementing CommitList
 draft: false
 weight: 3
 description: >
-    Describes the implementation of CommitList.
+    Describes the implementation of CommitList. I have implemented a JavaFX TableView in Kotlin. It is also a sample program for displaying graphics in a TreeView.
 ---
 
 CommitList is implemented using *TableView* in JavaFX.

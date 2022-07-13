@@ -12,7 +12,7 @@ JavaFX has three dialog implementation classes: [Alert](https://docs.oracle.com/
 These dialogs have some use,  but for more flexibility, I decided to implement my own dialog framework with the JavaFX [Dialog](https://docs.oracle.com/javase/jp/8/javafx/api/javafx/scene/control/Dialog.html) class.
 
 ---
-### GvDialogInterface
+### Dialog Common Interface
 
 The first step was to define a common interface for the dialog.
 This is defined to handle dialogs implemented using the standard JavaFX dialog classes, and dialogs with our own framework, in the same interface.
@@ -26,7 +26,7 @@ interface GvDialogInterface<T> {
 {{< /card-code >}}
 
 ---
-### GvCustomDialogCtrl
+### Abstract Dialog Control Class
 
 Next, I implemented custom dialog control class as an abstract class. 
 This is another simple class with only a method to perform initialization.
@@ -40,7 +40,7 @@ abstract class GvCustomDialogCtrl {
 
 ---
 
-### GvCustomDialog
+### Custom Dialog Class
 
 With these two, I wrote my custom dialog class.
 
